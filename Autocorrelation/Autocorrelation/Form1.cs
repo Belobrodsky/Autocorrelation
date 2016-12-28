@@ -57,6 +57,7 @@ namespace Autocorrelation
 
                 sw.Close();
 
+                //Туровский просит сделать очевидно как тут http://medstatistic.ru/theory/pirson.html
 
 
             }
