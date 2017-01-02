@@ -208,8 +208,8 @@ namespace Autocorrelation
           //  List<double> X = new List<double>() { 500,790,870,1500,2300,5600,100,20,5};
           //  List<double> Y = new List<double>() { 5.4, 4.2, 4.0, 3.4, 2.5, 1.0, 6.1, 8.2, 14.6};
 
-            List<double> X = new List<double>() { 3,5,6,1,4,11,9,2,8,7,10};
-            List<double> Y = new List<double>() { 2,7,8,3,4,6,11,1,10,5,9};
+            List<double> X = new List<double>() { 1,2,3,4,5,6,7,8,9};
+            List<double> Y = new List<double>() { 12,23,-22,33,44,55,54,45,77};
 
             MessageBox.Show(SpirmanCorrelation(X, Y).ToString());
         
