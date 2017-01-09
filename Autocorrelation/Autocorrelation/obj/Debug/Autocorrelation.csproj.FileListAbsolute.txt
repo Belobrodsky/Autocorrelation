@@ -26,3 +26,12 @@ H:\Белобродский\Autocorrelation\Autocorrelation\Autocorrelation\obj\
 H:\Белобродский\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.Form1.resources
 H:\Белобродский\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.Properties.Resources.resources
 H:\Белобродский\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\bin\Debug\Autocorrelation.exe.config
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.exe
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.pdb
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\bin\Debug\Autocorrelation.exe
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\bin\Debug\Autocorrelation.pdb
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.Form1.resources
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.Properties.Resources.resources
+C:\Users\admin\Desktop\GitHub\Autocorrelation\Autocorrelation\Autocorrelation\obj\Debug\Autocorrelation.csproj.GenerateResource.Cache

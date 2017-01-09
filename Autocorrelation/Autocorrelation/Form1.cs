@@ -28,6 +28,7 @@ namespace Autocorrelation
 
         private void открытьИПосчитатьАКToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //ghgtfuftuft
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
 
