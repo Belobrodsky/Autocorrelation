@@ -1,0 +1,8 @@
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\bin\Release\Autocorrelation.exe.config
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\bin\Release\Autocorrelation.exe
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\bin\Release\Autocorrelation.pdb
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\obj\Release\Autocorrelation.Form1.resources
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\obj\Release\Autocorrelation.Properties.Resources.resources
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\obj\Release\Autocorrelation.csproj.GenerateResource.Cache
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\obj\Release\Autocorrelation.exe
+H:\PHD\Autocorrelation\Autocorrelation\Autocorrelation\obj\Release\Autocorrelation.pdb

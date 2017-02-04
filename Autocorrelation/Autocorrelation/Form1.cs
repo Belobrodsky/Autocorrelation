@@ -53,26 +53,104 @@ namespace Autocorrelation
                 List<double> ForSpirman2 = new List<double>(inputVec2);
 
 
-                StreamWriter sw = new StreamWriter(openFileDialog1.FileName + "_autocorrPirson.csv");
+
+                List<double> prefinal = new List<double>();
+
                 int half = inputVec.Count / 2;
                 while (inputVec.Count>half)
                 {
-                    sw.WriteLine(PirsonCorrelation(inputVec, inputVec2));
+                    prefinal.Add(PirsonCorrelation(inputVec, inputVec2));
+                    //sw.WriteLine(PirsonCorrelation(inputVec, inputVec2));
                     inputVec.RemoveAt(0);
                     inputVec2.RemoveAt(inputVec2.Count-1);
                 }
+
+
+                if (numericUpDown1.Value>0)
+                {
+
+                    if (((int)numericUpDown1.Value > prefinal.Count) || (textBox1.Text.Length < 1))
+                    {
+                        MessageBox.Show(String.Format("отсечку невозможно сделать, так как введенное значение {0} больше длины результирующего сигнала {1} или отсечка не задана", numericUpDown1.Value, prefinal.Count));
+                    }
+                    else
+                    {
+                        for (int i = (int)numericUpDown1.Value; i < prefinal.Count; i++)
+                        {
+                            double maxValue = double.Parse(textBox1.Text);
+                            if (prefinal[i]>maxValue)
+                            {
+                                prefinal[i] = maxValue;
+                            }
+                        }
+                    }
+                }
+               
+                StreamWriter sw = new StreamWriter(openFileDialog1.FileName + "_autocorrPirson.csv");
+
+                for (int i = 0; i < prefinal.Count; i++)
+                {
+                    sw.WriteLine(prefinal[i]);
+                }
+
                 sw.Close();
 
 
-                StreamWriter sw2 = new StreamWriter(openFileDialog1.FileName + "_autocorrSpirman.csv");
+
+
+
+
+               
                 int half2 = ForSpirman.Count / 2;
+
+
+                List<double> prefinalSpir = new List<double>();
+
                 while (ForSpirman.Count > half)
                 {
-                    sw2.WriteLine(PirsonCorrelation(ForSpirman, ForSpirman2));
+                    // sw2.WriteLine(PirsonCorrelation(ForSpirman, ForSpirman2));
+
+                    prefinalSpir.Add(SpirmanCorrelation(ForSpirman, ForSpirman2));
                     ForSpirman.RemoveAt(0);
                     ForSpirman2.RemoveAt(ForSpirman2.Count - 1);
                 }
+
+
+
+
+                if (numericUpDown1.Value > 0)
+                {
+
+                    if (((int)numericUpDown1.Value > prefinalSpir.Count) || (textBox1.Text.Length<1))
+                    {
+                        MessageBox.Show(String.Format("отсечку невозможно сделать, так как введенное значение {0} больше длины результирующего сигнала {1} или отсечка не задана", numericUpDown1.Value, prefinalSpir.Count));
+                    }
+                    else
+                    {
+                        for (int i = (int)numericUpDown1.Value; i < prefinalSpir.Count; i++)
+                        {
+                            double maxValue = double.Parse(textBox1.Text);
+                            if (prefinalSpir[i] > maxValue)
+                            {
+                                prefinalSpir[i] = maxValue;
+                            }
+                        }
+                    }
+                }
+
+
+
+                StreamWriter sw2 = new StreamWriter(openFileDialog1.FileName + "_autocorrSpirman.csv");
+                for (int i = 0; i < prefinal.Count; i++)
+                {
+                    sw2.WriteLine(prefinalSpir[i]);
+                }
                 sw2.Close();
+
+
+
+
+
 
                 //Туровский просит сделать очевидно как тут http://medstatistic.ru/theory/pirson.html
 
